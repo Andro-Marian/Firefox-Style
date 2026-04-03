@@ -1,0 +1,13 @@
+@media -moz-pref("sidebar.revamp")
+{
+    #sidebar-box {
+        padding-block-end: 0 !important;
+    }
+    #sidebar-splitter {
+        width: 1px !important;
+    }
+    #sidebar {
+        border-radius: 0 !important;
+    }
+}
+

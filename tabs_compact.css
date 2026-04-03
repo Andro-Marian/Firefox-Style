@@ -1,0 +1,16 @@
+:root {
+    --tab-min-height: 28px !important;
+}
+
+@media not ((forced-colors) or (-moz-native-theme)) {
+    :root:not([lwtheme])
+    {
+        --toolbar-bgcolor: light-dark(#f9f9fb, #363540) !important;
+    }
+}
+
+.tab-background:is([selected]) {
+    margin-block: var(--tab-block-margin) 0 !important;
+    border-radius: var(--tab-border-radius) var(--tab-border-radius) 0 0 !important;
+    background-color: var(--toolbar-bgcolor) !important;
+}
