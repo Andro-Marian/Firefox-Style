@@ -1,0 +1,19 @@
+#PersonalToolbar:not([customizing]) {
+    margin-bottom: calc(-1px - 20px - 2 * 4px) !important;
+    border-bottom: 1px solid var(--border-color-card) !important;
+
+    transform: rotateX(90deg);
+    transform-origin: top;
+
+    background-color: var(--toolbar-bgcolor) !important;
+    transition: transform 0ms linear 200ms !important;
+}
+
+#navigator-toolbox:hover > #PersonalToolbar {
+    transform: rotateX(0);
+    transition: none !important;
+}
+
+#navigator-toolbox{
+    --browser-area-z-index-toolbox: 4;
+}
